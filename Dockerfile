@@ -5,7 +5,7 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 RUN git clone https://github.com/prerender/prerender.git
-RUN cp -r ./prerender/*  . && ls
+RUN cp -r ./prerender/*  .
 
 RUN npm install \
  && npm cache clean
